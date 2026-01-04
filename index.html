@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Battle Royale FPS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lobby">
+  <h2>🎮 Battle Royale</h2>
+  <p id="cashText"></p>
+  <button onclick="startMatch()">▶ Start Match</button>
+  <button onclick="openStore()">🛒 Store</button>
+</div>
+
+<div id="store" class="hidden">
+  <h3>Store</h3>
+  <button onclick="buySkin()">Buy Skin (100)</button><br>
+  <button onclick="backLobby()">⬅ Back</button>
+</div>
+
+<div id="hud" class="hidden">
+  ❤️ <span id="health">100</span> |
+  🔫 <span id="gun">Pistol</span> |
+  Ammo: <span id="ammo">12</span> |
+  👾 <span id="enemyCount">0</span>
+</div>
+
+<button id="shoot" class="hidden">🔥</button>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+    </html>
